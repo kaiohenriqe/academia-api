@@ -63,6 +63,7 @@ Se o CPF já existir, a API retorna:
 - FastAPI Pagination  
 - Uvicorn
 
+```json
 Academia API/
 │
 ├── app/
@@ -75,3 +76,4 @@ Academia API/
 ├── main.py
 ├── requirements.txt
 └── README.md
+```
