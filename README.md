@@ -63,8 +63,7 @@ Se o CPF já existir, a API retorna:
 - FastAPI Pagination  
 - Uvicorn
 
-🗂 Estrutura do projeto
-Mini Projeto FastAPI/
+Academia API/
 │
 ├── app/
 │   ├── routers/
