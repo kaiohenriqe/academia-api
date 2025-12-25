@@ -33,3 +33,46 @@ http://127.0.0.1:8000
 📚 Swagger (onde você testa a API):
 ```
 http://127.0.0.1:8000/docs
+```
+🧪 Exemplo de uso
+
+Exemplo de cadastro de um participante (JSON):
+```json
+{
+  "nome": "Kaio Henrique",
+  "cpf": "12345678901",
+  "idade": 22,
+  "centro_treinamento": "CT São Paulo"
+}
+```
+
+
+Se o CPF já existir, a API retorna:
+```json
+{
+  "detail": "CPF já cadastrado"
+}
+```
+
+🧰 Tecnologias usadas
+- Python  
+- FastAPI  
+- SQLAlchemy  
+- Pydantic  
+- SQLite  
+- FastAPI Pagination  
+- Uvicorn
+
+🗂 Estrutura do projeto
+Mini Projeto FastAPI/
+│
+├── app/
+│   ├── routers/
+│   │   └── participante.py
+│   ├── models.py
+│   ├── schemas.py
+│   └── database.py
+│
+├── main.py
+├── requirements.txt
+└── README.md
