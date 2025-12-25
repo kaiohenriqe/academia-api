@@ -1,24 +1,35 @@
-# 🏋️ Academia API ⚔️
+# ⚡ Academia API
 
-Uma API criada com **FastAPI** para treinar habilidades de backend, como se fosse um dojo digital.  
-Aqui você cadastra e lista **participantes da academia**, com regras de honra como **CPF único**.  
-Projeto focado em evolução e prática, como um verdadeiro treinamento de herói! 🚀✨
+Projeto de estudo com **FastAPI** para praticar desenvolvimento de backend.  
+A API permite **registrar** e **consultar** participantes da academia, garantindo que cada CPF seja único.  
+Um laboratório simples para aprender e testar conceitos de APIs REST 🚀
+
+
+## 🧠 Como isso funciona?
+
+Essa aplicação é uma **API**, ou seja:
+- não tem tela (frontend)
+- funciona recebendo requisições (GET, POST, etc.)
+- responde com dados em JSON
+
+Para facilitar os testes, o FastAPI gera automaticamente uma interface chamada **Swagger**.
 
 ---
 
-## ⚙️ Setup do Campo de Treino
+## ▶️ Rodando o projeto
+
+Depois de instalar as dependências, use o comando abaixo:
 
 ```bash
-git clone https://github.com/seu-usuario/academia-api.git
+uvicorn main:app --reload
 ```
-cd academia-api
+
+🔗 Acessos e testes
+
+🌐 API (endereço base):
+```bash
+http://127.0.0.1:8000
 ```
-python -m venv venv
+📚 Swagger (onde você testa a API):
 ```
-source venv/bin/activate   # Linux/Mac
-```
-venv\Scripts\Activate.ps1  # Windows
-```
-pip install -r requirements.txt
-```
-uvicorn app.main:app --reload
+http://127.0.0.1:8000/docs
