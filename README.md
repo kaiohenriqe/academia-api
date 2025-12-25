@@ -24,6 +24,7 @@ Depois de instalar as dependências, use o comando abaixo:
 
 ```bash
 uvicorn main:app --reload
+```
 
 ## 🔗 Acessos e testes
 
